@@ -1,5 +1,5 @@
 
-// Write a program to print repeated number pattern
+// Write a program to print repeated character pattern
 
 #include <iostream>
 using namespace std;
@@ -7,15 +7,17 @@ using namespace std;
 int main()
 {
     int row;
+    char ch=65;
 
-    cout<<"enter the number of rows = ";
+    cout<<"Enter the number of rows = ";
     cin>>row;
 
     for(int i=0;i<row;i++)
     {
         for(int j=0;j<i+1;j++)
         {
-            cout<<i+1;
+            ch=65+i;
+            cout<<ch;
         }
         cout<<endl;
     }

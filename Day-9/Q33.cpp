@@ -1,5 +1,5 @@
 
-// Write a program to print repeated number pattern
+// Write a program to print reverse star pattern
 
 #include <iostream>
 using namespace std;
@@ -8,14 +8,14 @@ int main()
 {
     int row;
 
-    cout<<"enter the number of rows = ";
+    cout<<"Enter the number of rows = ";
     cin>>row;
 
     for(int i=0;i<row;i++)
     {
-        for(int j=0;j<i+1;j++)
+        for(int j=0;j<row-i;j++)
         {
-            cout<<i+1;
+            cout<<"*";
         }
         cout<<endl;
     }
